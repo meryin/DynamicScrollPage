@@ -7,14 +7,7 @@
 //
 
 import UIKit
-enum QueueType:Int{
-    case BJQueueTypeLeft = 0
-    case BJQueueTypeMid  = 1
-    case BJQueueTypeRight    = 2
-    case BJQueueTypeMoveLeft = 3
-    case BJQueueTypeMoveRight = 4
-  
-}
+
 class ScrollPageController: UIViewController {
 
     var catebgColor:UIColor = UIColor.white
@@ -30,7 +23,7 @@ class ScrollPageController: UIViewController {
     var categoryTexts:[String] = []
     var viewControllers:[UIViewController] = []
     var selectCategory:String?
-//    var queueArray:[UIViewController] = []
+
     
     
     
@@ -49,7 +42,7 @@ class ScrollPageController: UIViewController {
         
     }
     func setUpNavi(){
-//        self.contentInsetAdjustmentBehavior = .never
+
         self.automaticallyAdjustsScrollViewInsets = false
         self.extendedLayoutIncludesOpaqueBars = true
         self.edgesForExtendedLayout = [.left,.right,.bottom,.top]
